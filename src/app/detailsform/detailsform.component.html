@@ -1,0 +1,12 @@
+<form name="details">
+    <div class="form-group">
+      <label for="name">Company Name</label>
+      <input type="text"name="cname" [(ngModel)]="companyname" class="form-control" id="exampleFormControlInput1" placeholder="Company Name">
+    </div>
+    <div class="form-group">
+        <label for="Pname">Position</label>
+        <input type="text" name="'pname" [(ngModel)]="positionname" class="form-control" id="exampleFormControlInput1" placeholder="Position">
+      </div>
+    <button class="btn btn-outline-success  m-2" (click)="generatePDF()" type="submit">Generate PDF</button>
+    <p>{{template}}</p>
+</form>

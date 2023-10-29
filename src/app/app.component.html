@@ -1,10 +1,14 @@
 <nav class="navbar navbar-light bg-light justify-content-between ">
   <a class="navbar-brand m-2 ">CV Generator</a>
   <form class="form-inline">
-    <button class="btn btn-outline-success my-2 my-sm-0 m-2" (click)=onUpdateClick() type="submit">Update Template</button>
+    <button class="btn btn-outline-success  m-2" (click)=onUpdateClick() type="submit">Update Template</button>
+    <button class="btn btn-outline-success  m-2" (click)=onUpdateDetailsClick() type="submit">Update Details</button>
+    
   </form>
+
 </nav>
 
 <!-- Update Template Text Box Component -->
 
 <app-cvtemplate *ngIf="showUpdateTemplate"></app-cvtemplate>
+<app-detailsform *ngIf="showUpdateDetails"></app-detailsform>

@@ -13,11 +13,11 @@ showCurrentTemplate:boolean=false;
   ngOnInit() {
     if(localStorage.getItem('template')!=null){
       this.inputValue=localStorage.getItem('template');
-      this.showCurrentTemplate=true
     }
    
   }
   onSaveClick(){   
+    localStorage.clear
     localStorage.setItem('template',JSON.stringify(this.inputValue))
     this.inputValue="";
   }

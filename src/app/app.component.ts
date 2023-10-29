@@ -9,9 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   showUpdateTemplate : boolean = false;
+  showUpdateDetails : boolean = true;
   inputValue: string = '';
   
   onUpdateClick(){
     this.showUpdateTemplate=!this.showUpdateTemplate;
+  }
+  onUpdateDetailsClick(){
+    this.showUpdateDetails=!this.showUpdateDetails;
   }
 }
